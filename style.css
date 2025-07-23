@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #202A44, #4B2C82);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #FF2963;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background: #2E2B5F;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    resize: none;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+select {
+    flex: 1;
+    background-color: #2E2B5F;
+    color: #fff;
+    padding: 12px 0px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: right 15px center;
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(135deg, #FF2963, #FF5B7E);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 6px 18px rgba(255, 41, 99, 0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #e81f58, #ff3f72);
+}
+
+button img {
+    width: 18px;
+}
